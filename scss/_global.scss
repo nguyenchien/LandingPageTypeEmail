@@ -28,7 +28,7 @@ body {
     font-size: 50px;
     line-height: calc(63 / 50);
   }
-  &--normal {
+  &--small {
     font-size: 40px;
     line-height: calc(50 / 40);
   }
@@ -42,7 +42,7 @@ body {
 .btn {
   font-weight: 400;
   font-size: 18px;
-  line-height: calc(28 / 18);
+  line-height: 1.12;
   border-radius: 10px;
   padding: 18px 30px;
   &--primary {

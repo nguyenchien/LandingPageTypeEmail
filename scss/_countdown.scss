@@ -1,0 +1,24 @@
+.countdown {
+  background-color: $primary-yellow;
+  padding: 70px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 100px;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: calc(55 / 44);
+    color: $gray1e;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: $gar4f;
+  }
+}

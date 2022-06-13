@@ -1,10 +1,12 @@
 .header {
   background-color: $gray1e;
-  padding: 54px 0 422px;
+  padding: 54px 0 1px;
+  margin-bottom: calc(220px + 140px);
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 83px;
   }
   &__logo {
     display: flex;
@@ -29,6 +31,42 @@
       &:hover {
         color: white;
       }
+    }
+  }
+  &__button {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    padding: 9px 25px;
+    color: white;
+    border-radius: 6px;
+    background-color: rgba(181, 179, 175, 0.2);
+    text-align: center;
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 54px;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+    margin-bottom: 88px;
+    justify-content: center;
+    .btn-works {
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      gap: 0 16px;
+      color: white;
+    }
+  }
+  &__image {
+    margin-bottom: -220px;
+    img {
+      width: 100%;
     }
   }
 }

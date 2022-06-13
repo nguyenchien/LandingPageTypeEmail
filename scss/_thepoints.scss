@@ -1,0 +1,26 @@
+.thepoints {
+  padding-bottom: 260px;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px;
+  }
+  &__image {
+    flex-shrink: 0;
+  }
+  &__content {
+    max-width: 548px;
+    flex: 1;
+  }
+  &__heading {
+    margin-bottom: 18px;
+  }
+  &__text {
+    margin-bottom: 28px;
+    &--bold {
+      font-weight: bold;
+      margin-bottom: 51px;
+    }
+  }
+}

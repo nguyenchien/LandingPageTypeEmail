@@ -1,0 +1,75 @@
+.newsletters {
+  padding: 140px 0 218px;
+  &__header {
+    margin-bottom: 159px;
+  }
+  &__heading {
+    text-align: center;
+    max-width: 629px;
+    margin: 0 auto 18px;
+  }
+  &__desc {
+    max-width: 475px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px;
+  }
+  &__content {
+    flex: 1;
+    max-width: 555px;
+  }
+  &__title {
+    max-width: 378px;
+    margin-bottom: 18px;
+  }
+  &__text {
+    margin-bottom: 37px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0 20px;
+  }
+  &__item {
+    flex-grow: 1;
+    flex-basis: 0;
+    &--icon {
+      width: 62px;
+      height: 62px;
+      margin-bottom: 19px;
+    }
+    &--name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: calc(25 / 20);
+      margin-bottom: 9px;
+    }
+    &--desc {
+      margin-bottom: 28px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    &--link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(26 / 16);
+      color: $gray1e;
+      border-bottom: 1px solid transparent;
+      transition: border 0.3s ease-out;
+      &:hover {
+        border-bottom: 1px solid $primary-color;
+      }
+    }
+  }
+  &__image {
+    flex-shrink: 0;
+  }
+}

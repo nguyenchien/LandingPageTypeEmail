@@ -76,7 +76,7 @@ body {
   .heading--big {
     font-size: 50px;
     line-height: calc(63 / 50); }
-  .heading--normal {
+  .heading--small {
     font-size: 40px;
     line-height: calc(50 / 40); }
 
@@ -89,7 +89,7 @@ body {
 .btn {
   font-weight: 400;
   font-size: 18px;
-  line-height: calc(28 / 18);
+  line-height: 1.12;
   border-radius: 10px;
   padding: 18px 30px; }
   .btn--primary {
@@ -98,11 +98,13 @@ body {
 
 .header {
   background-color: #1e1e1e;
-  padding: 54px 0 422px; }
+  padding: 54px 0 1px;
+  margin-bottom: calc(220px + 140px); }
   .header__top {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 83px; }
   .header__logo {
     display: flex;
     align-items: center;
@@ -123,3 +125,133 @@ body {
       transition: color 0.2s linear; }
       .header .menu__link:hover {
         color: white; }
+  .header__button {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    padding: 9px 25px;
+    color: white;
+    border-radius: 6px;
+    background-color: rgba(181, 179, 175, 0.2);
+    text-align: center; }
+  .header__heading {
+    text-align: center;
+    margin-bottom: 54px; }
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0 28px;
+    margin-bottom: 88px;
+    justify-content: center; }
+    .header__buttons .btn-works {
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      gap: 0 16px;
+      color: white; }
+  .header__image {
+    margin-bottom: -220px; }
+    .header__image img {
+      width: 100%; }
+
+.countdown {
+  background-color: #e2f471;
+  padding: 70px 0; }
+  .countdown__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 100px; }
+  .countdown__item {
+    text-align: center; }
+  .countdown__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: calc(55 / 44);
+    color: #1e1e1e; }
+  .countdown__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: #4f4d49; }
+
+.newsletters {
+  padding: 140px 0 218px; }
+  .newsletters__header {
+    margin-bottom: 159px; }
+  .newsletters__heading {
+    text-align: center;
+    max-width: 629px;
+    margin: 0 auto 18px; }
+  .newsletters__desc {
+    max-width: 475px;
+    margin: 0 auto;
+    text-align: center; }
+  .newsletters__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px; }
+  .newsletters__content {
+    flex: 1;
+    max-width: 555px; }
+  .newsletters__title {
+    max-width: 378px;
+    margin-bottom: 18px; }
+  .newsletters__text {
+    margin-bottom: 37px; }
+  .newsletters__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0 20px; }
+  .newsletters__item {
+    flex-grow: 1;
+    flex-basis: 0; }
+    .newsletters__item--icon {
+      width: 62px;
+      height: 62px;
+      margin-bottom: 19px; }
+    .newsletters__item--name {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: calc(25 / 20);
+      margin-bottom: 9px; }
+    .newsletters__item--desc {
+      margin-bottom: 28px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .newsletters__item--link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(26 / 16);
+      color: #1e1e1e;
+      border-bottom: 1px solid transparent;
+      transition: border 0.3s ease-out; }
+      .newsletters__item--link:hover {
+        border-bottom: 1px solid #00bd82; }
+  .newsletters__image {
+    flex-shrink: 0; }
+
+.thepoints {
+  padding-bottom: 260px; }
+  .thepoints__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px; }
+  .thepoints__image {
+    flex-shrink: 0; }
+  .thepoints__content {
+    max-width: 548px;
+    flex: 1; }
+  .thepoints__heading {
+    margin-bottom: 18px; }
+  .thepoints__text {
+    margin-bottom: 28px; }
+    .thepoints__text--bold {
+      font-weight: bold;
+      margin-bottom: 51px; }
