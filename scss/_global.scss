@@ -1,3 +1,52 @@
 body {
   line-height: 1.5;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  background-color: $body-color;
+  max-width: $body-width;
+  margin: 0 auto;
+}
+.container {
+  max-width: calc(#{$container-width} + #{$gap} * 2);
+  padding: 0 $gap;
+  margin: 0 auto;
+}
+.text-linear {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: calc(62 / 52);
+  background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.heading {
+  color: $gray1e;
+  font-weight: 600;
+  &--big {
+    font-size: 50px;
+    line-height: calc(63 / 50);
+  }
+  &--normal {
+    font-size: 40px;
+    line-height: calc(50 / 40);
+  }
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: calc(28 / 18);
+  color: $gray54;
+}
+.btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  border-radius: 10px;
+  padding: 18px 30px;
+  &--primary {
+    background-color: $primary-color;
+    color: white;
+  }
 }

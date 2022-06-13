@@ -1,0 +1,34 @@
+.header {
+  background-color: $gray1e;
+  padding: 54px 0 422px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+    &--text {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: calc(31 / 25);
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 0 38px;
+    &__link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(26 / 16);
+      color: $grayb5;
+      transition: color 0.2s linear;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
