@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./js/jquery-1.9.1.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/owl.carousel.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800"
       rel="stylesheet"
     />
     <title>Landing Page Type Email</title>
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -157,7 +167,186 @@
             </div>
           </div>
         </section>
+        <section class="services">
+          <div class="container">
+            <div class="services__main">
+              <h2 class="heading heading--big services__heading">
+                Our some service
+              </h2>
+              <ul class="services__list">
+                <li class="services__item">
+                  <span class="services__icon"
+                    ><svg
+                      width="28"
+                      height="21"
+                      viewBox="0 0 28 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M26 16.875V4.125C26 2.94917 25.0547 2 23.8836 2H4.1164C2.94533 2 2 2.94917 2 4.125V16.875C2 18.0508 2.94533 19 4.1164 19H23.8836C25.0547 19 26 18.0508 26 16.875ZM24.1517 3.96917C24.6173 4.43667 24.3633 4.91833 24.1093 5.15917L18.381 10.4292L23.8836 16.1808C24.0529 16.3792 24.1658 16.6908 23.9683 16.9033C23.7848 17.13 23.3616 17.1158 23.1781 16.9742L17.0123 11.69L13.9929 14.4525L10.9877 11.69L4.82187 16.9742C4.63845 17.1158 4.21517 17.13 4.03175 16.9033C3.83422 16.6908 3.94709 16.3792 4.1164 16.1808L9.61905 10.4292L3.89065 5.15917C3.63668 4.91833 3.38272 4.43667 3.84832 3.96917C4.31393 3.50167 4.79365 3.72833 5.18871 4.06833L13.9929 11.2083L22.8113 4.06833C23.2063 3.72833 23.6861 3.50167 24.1517 3.96917Z"
+                      />
+                    </svg>
+                  </span>
+                  <h3 class="services__title">Email Marketing</h3>
+                  <p class="text services__desc">
+                    Set up standing order in-app, and send money to any other
+                    bank account instantly
+                  </p>
+                </li>
+                <li class="services__item">
+                  <span class="services__icon"
+                    ><svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 0C6.71484 0 0 5.0332 0 11.25C0 15.6445 3.36914 19.4414 8.26758 21.293L4.99805 30L14.4023 22.4766C14.6016 22.4824 14.7949 22.5 15 22.5C23.2852 22.5 30 17.4668 30 11.25C30 5.0332 23.2852 0 15 0ZM7.5 13.752C6.12305 13.752 4.99805 12.6328 4.99805 11.25C4.99805 9.86719 6.11719 8.74805 7.5 8.74805C8.87695 8.74805 10.002 9.86719 10.002 11.25C10.002 12.6328 8.87695 13.752 7.5 13.752ZM15 13.752C13.623 13.752 12.498 12.6328 12.498 11.25C12.498 9.86719 13.6172 8.74805 15 8.74805C16.377 8.74805 17.502 9.86719 17.502 11.25C17.502 12.6328 16.377 13.752 15 13.752ZM22.5 13.752C21.123 13.752 19.998 12.6328 19.998 11.25C19.998 9.86719 21.1172 8.74805 22.5 8.74805C23.877 8.74805 25.002 9.86719 25.002 11.25C25.002 12.6328 23.877 13.752 22.5 13.752Z"
+                      />
+                    </svg>
+                  </span>
+                  <h3 class="services__title">Email Marketing</h3>
+                  <p class="text services__desc">
+                    Set up standing order in-app, and send money to any other
+                    bank account instantly
+                  </p>
+                </li>
+                <li class="services__item">
+                  <span class="services__icon"
+                    ><svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25 5.00002C24.1875 4.18741 23.2228 3.54281 22.1612 3.10303C21.0995 2.66324 19.9616 2.43689 18.8125 2.43689C17.6634 2.43689 16.5255 2.66324 15.4638 3.10303C14.4022 3.54281 13.4375 4.18741 12.625 5.00002L2.85 14.775C2.61718 15.0092 2.48651 15.326 2.48651 15.6563C2.48651 15.9865 2.61718 16.3033 2.85 16.5375L7.275 20.9625L2.85 25.375L4.625 27.15L9.0375 22.725L13.4625 27.15C13.6967 27.3828 14.0135 27.5135 14.3437 27.5135C14.674 27.5135 14.9908 27.3828 15.225 27.15L25 17.425C25.8201 16.6116 26.4711 15.6438 26.9153 14.5776C27.3595 13.5113 27.5882 12.3676 27.5882 11.2125C27.5882 10.0574 27.3595 8.91374 26.9153 7.84748C26.4711 6.78121 25.8201 5.81345 25 5.00002ZM21.625 8.37502C20.8506 7.63537 19.8209 7.22263 18.75 7.22263C17.6791 7.22263 16.6494 7.63537 15.875 8.37502L14.55 7.05002C15.6652 5.93863 17.1755 5.31458 18.75 5.31458C20.3245 5.31458 21.8347 5.93863 22.95 7.05002L21.625 8.37502Z"
+                      />
+                    </svg>
+                  </span>
+                  <h3 class="services__title">Email Marketing</h3>
+                  <p class="text services__desc">
+                    Set up standing order in-app, and send money to any other
+                    bank account instantly
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="tools">
+          <div class="container">
+            <div class="tools__main">
+              <div class="tools__content">
+                <h2 class="heading heading--big tools__heading">
+                  Join forces with your favorite business tools
+                </h2>
+                <p class="text tools__desc">
+                  awareness through email became a must-have, and our ESP wasn't
+                  cutting
+                </p>
+                <a href="#!" class="btn btn--primary tools__btn"
+                  ><span>See imagradtions</span
+                  ><img srcset="./images/icon-arrow.png 2x" alt=""
+                /></a>
+              </div>
+              <div class="tools__image">
+                <img src="./images/img-tools.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testmonials">
+          <div class="container">
+            <div class="testmonials__main">
+              <h2 class="heading heading--big testmonials__heading">
+                See what our customer have to say
+              </h2>
+              <div
+                class="testmonials__slider owl-carousel owl-theme"
+                id="owl-demo"
+              >
+                <div class="testmonials__item">
+                  <div class="testmonials__image">
+                    <img srcset="./images/img-testmonials.png 2x" alt="" />
+                  </div>
+                  <div class="testmonials__content">
+                    <p class="testmonials__message">
+                      New 2022, we sent a few email blasts with MailChimp here
+                      and there, but it wasn't a focus. Once we shiftedaway from
+                      retail-only sales to eCornmerce soles, driving customer
+                      awareness through email became a must-have, and our ESP
+                      wasn't cutting
+                    </p>
+                    <p class="testmonials__customer">
+                      Lello Mhoury. Crecter of Marketing
+                    </p>
+                    <img
+                      src="./images/img-start-5.png"
+                      alt=""
+                      class="testmonials__start--img"
+                    />
+                    <p class="testmonials__start--text">4.5 Rating Capture</p>
+                  </div>
+                </div>
+                <div class="testmonials__item">
+                  <div class="testmonials__image">
+                    <img srcset="./images/img-testmonials.png 2x" alt="" />
+                  </div>
+                  <div class="testmonials__content">
+                    <p class="testmonials__message">
+                      New 2022, we sent a few email blasts with MailChimp here
+                      and there, but it wasn't a focus. Once we shiftedaway from
+                      retail-only sales to eCornmerce soles, driving customer
+                      awareness through email became a must-have, and our ESP
+                      wasn't cutting
+                    </p>
+                    <p class="testmonials__customer">
+                      Lello Mhoury. Crecter of Marketing
+                    </p>
+                    <img
+                      src="./images/img-start-5.png"
+                      alt=""
+                      class="testmonials__start--img"
+                    />
+                    <p class="testmonials__start--text">4.5 Rating Capture</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="library">
+          <div class="container">
+            <div class="library__main">
+              <div class="library__title">
+                <h2 class="heading heading--primary library__heading">
+                  Sendlane Resource Library
+                </h2>
+                <p class="text library__text">
+                  Cat in tuch with of our compare and take a personal tour of
+                  Sraklune
+                </p>
+              </div>
+              <div class="library__tab">
+                <ul class="tab__nav">
+                  <li class="tab-item">Articles</li>
+                  <li class="tab-item">Ebooks</li>
+                  <li class="tab-item">Products</li>
+                </ul>
+                <div class="tab__content">
+                  <div class="content-list"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>
+  <script src="./js/app.js"></script>
 </html>

@@ -1,0 +1,38 @@
+.tools {
+  background-color: $gray1e;
+  padding: 70px 0;
+  margin-bottom: 140px;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px;
+  }
+  &__heading {
+    color: white;
+  }
+  &__content {
+    max-width: 583px;
+    flex: 1;
+  }
+  &__heading {
+    margin-bottom: 10px;
+  }
+  &__desc {
+    color: $grayb5;
+    margin-bottom: 41px;
+  }
+  &__btn {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 19px;
+    img {
+      width: 15px;
+      height: 12px;
+    }
+  }
+  &__image {
+    max-width: 400px;
+  }
+}

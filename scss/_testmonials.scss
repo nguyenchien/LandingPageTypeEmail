@@ -1,0 +1,127 @@
+.testmonials {
+  margin-bottom: 154px;
+  &__heading {
+    max-width: 596px;
+    text-align: center;
+    margin: 0 auto 76px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 30px;
+  }
+  &__content {
+    max-width: 571px;
+    flex: 1;
+  }
+  &__message {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(37 / 23);
+    color: $gray1e;
+    margin-bottom: 27px;
+    position: relative;
+    &:after {
+      position: absolute;
+      right: 129px;
+      bottom: -40px;
+      content: "";
+      display: inline-block;
+      width: 70px;
+      height: 41px;
+      background: url(../images/img-quote.png) no-repeat 0 0;
+      background-size: contain;
+    }
+  }
+  &__customer {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: calc(22 / 17);
+    color: $gray7d;
+    margin-bottom: 14px;
+  }
+  &__start {
+    &--img {
+      width: 116px;
+      margin-bottom: 8px;
+    }
+    &--text {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: calc(22 / 17);
+    }
+  }
+  &__buttons {
+    margin-top: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 8px;
+    a {
+      width: 59px;
+      height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $gardc;
+      border-radius: 15px;
+      transition: all 0.1s linear;
+      &:hover {
+        background-color: $primary-color;
+        svg {
+          stroke: white;
+        }
+      }
+      svg {
+        stroke: black;
+      }
+    }
+  }
+  .owl-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .owl-next,
+    .owl-prev {
+      width: 59px;
+      height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $gardc;
+      border-radius: 15px;
+      transition: all 0.1s linear;
+      opacity: 1;
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+    .owl-next {
+      &::after {
+        content: url("../images/icon-arrow-next.svg");
+        display: inline-block;
+      }
+      &:hover {
+        &::after {
+          content: url("../images/icon-arrow-next-h.svg");
+        }
+      }
+    }
+    .owl-prev {
+      &::after {
+        content: url("../images/icon-arrow-prev.svg");
+        display: inline-block;
+      }
+      &:hover {
+        &::after {
+          content: url("../images/icon-arrow-prev-h.svg");
+        }
+      }
+    }
+  }
+  &__image {
+    max-width: 400px;
+    flex-shrink: 0;
+  }
+}

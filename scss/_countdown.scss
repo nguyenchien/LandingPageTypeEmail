@@ -1,6 +1,7 @@
 .countdown {
   background-color: $primary-yellow;
   padding: 70px 0;
+  margin-bottom: 140px;
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
