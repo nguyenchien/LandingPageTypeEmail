@@ -1,6 +1,6 @@
 body {
   line-height: 1.5;
-  font-family: "Sora", sans-serif;
+  font-family: $primary-font;
   font-weight: 400;
   background-color: $body-color;
   max-width: $body-width;
@@ -11,10 +11,23 @@ body {
   padding: 0 $gap;
   margin: 0 auto;
 }
+.main__logo {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  @include maxWidth(767px) {
+    gap: 0 12px;
+  }
+  &--text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: calc(31 / 25);
+    @include maxWidth(767px) {
+      font-size: 17px;
+    }
+  }
+}
 .text-linear {
-  font-size: 52px;
-  font-weight: 600;
-  line-height: calc(62 / 52);
   background: linear-gradient(93.52deg, #e6ff4b 8.71%, #00bd82 98.16%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -27,17 +40,29 @@ body {
   &--big {
     font-size: 50px;
     line-height: calc(63 / 50);
+    @include maxWidth(767px) {
+      font-size: 30px;
+      line-height: calc(40 / 30);
+    }
   }
   &--small {
     font-size: 40px;
     line-height: calc(50 / 40);
+    @include maxWidth(767px) {
+      font-size: 24px;
+      line-height: calc(34 / 24);
+    }
   }
 }
 .text {
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: calc(28 / 18);
   color: $gray54;
+  @include maxWidth(767px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 .btn {
   font-weight: 400;
@@ -45,6 +70,11 @@ body {
   line-height: 1.12;
   border-radius: 10px;
   padding: 18px 30px;
+  @include maxWidth(767px) {
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 14px;
+  }
   &--primary {
     background-color: $primary-color;
     color: white;

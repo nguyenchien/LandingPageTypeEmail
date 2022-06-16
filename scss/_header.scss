@@ -1,27 +1,27 @@
 .header {
+  display: block;
   background-color: $gray1e;
   padding: 54px 0 1px;
   margin-bottom: calc(220px + 140px);
+  @include maxWidth(767px) {
+    margin-bottom: 136px;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 83px;
-  }
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: 0 15px;
-    &--text {
-      font-weight: 600;
-      font-size: 25px;
-      line-height: calc(31 / 25);
+    @include maxWidth(767px) {
+      margin-bottom: 55px;
     }
   }
   .menu {
     display: flex;
     align-items: center;
     gap: 0 38px;
+    @include maxWidth(767px) {
+      display: none;
+    }
     &__link {
       font-weight: 400;
       font-size: 16px;
@@ -44,9 +44,24 @@
     background-color: rgba(181, 179, 175, 0.2);
     text-align: center;
   }
+  &__icon-menu {
+    display: none;
+    @include maxWidth(767px) {
+      display: block;
+    }
+  }
   &__heading {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: calc(62 / 52);
     text-align: center;
     margin-bottom: 54px;
+    @include maxWidth(767px) {
+      font-size: 30px;
+      line-height: calc(40 / 30);
+      padding: 0 32px;
+      margin-bottom: 35px;
+    }
   }
   &__buttons {
     display: flex;
@@ -54,6 +69,10 @@
     gap: 0 28px;
     margin-bottom: 88px;
     justify-content: center;
+    @include maxWidth(767px) {
+      gap: 0 20px;
+      margin-bottom: 64px;
+    }
     .btn-works {
       padding-left: 0;
       padding-right: 0;
@@ -61,10 +80,18 @@
       align-items: center;
       gap: 0 16px;
       color: white;
+      @include maxWidth(767px) {
+        span {
+          display: none;
+        }
+      }
     }
   }
   &__image {
     margin-bottom: -220px;
+    @include maxWidth(767px) {
+      margin-bottom: -76px;
+    }
     img {
       width: 100%;
     }

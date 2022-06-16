@@ -1,19 +1,38 @@
 .testmonials {
+  display: block;
   margin-bottom: 154px;
+  @include maxWidth(767px) {
+    margin-bottom: 70px;
+  }
   &__heading {
     max-width: 596px;
     text-align: center;
     margin: 0 auto 76px;
+    @include maxWidth(767px) {
+      margin-bottom: 14px;
+    }
   }
   &__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0 30px;
+    @include maxWidth(767px) {
+      flex-direction: column-reverse;
+      gap: 30px 0;
+    }
   }
   &__content {
     max-width: 571px;
     flex: 1;
+    @include maxWidth(767px) {
+      //   max-width: none;
+      //   flex: none;
+    }
+  }
+  &__slider {
+    @include maxWidth(767px) {
+    }
   }
   &__message {
     font-weight: 400;

@@ -1,5 +1,17 @@
+.header,
+.countdown,
+.newsletters,
+.thepoints,
+.services,
+.tools,
+.testmonials,
+.library,
+.footer {
+  display: none;
+}
 @import "reset";
 @import "variables";
+@import "mixins";
 @import "global";
 @import "header";
 @import "countdown";
@@ -9,3 +21,4 @@
 @import "tools";
 @import "testmonials";
 @import "library";
+@import "footer";

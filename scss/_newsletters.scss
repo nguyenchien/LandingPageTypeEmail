@@ -1,23 +1,41 @@
 .newsletters {
+  display: block;
   margin-bottom: 218px;
+  @include maxWidth(767px) {
+    margin-bottom: 100px;
+  }
   &__header {
     margin-bottom: 159px;
+    @include maxWidth(767px) {
+      margin-bottom: 98px;
+    }
   }
   &__heading {
     text-align: center;
     max-width: 629px;
     margin: 0 auto 18px;
+    @include maxWidth(767px) {
+      max-width: none;
+      margin-bottom: 12px;
+    }
   }
   &__desc {
     max-width: 475px;
     margin: 0 auto;
     text-align: center;
+    @include maxWidth(767px) {
+      max-width: none;
+      margin-bottom: 0;
+    }
   }
   &__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0 20px;
+    @include maxWidth(767px) {
+      flex-direction: column-reverse;
+    }
   }
   &__content {
     flex: 1;
@@ -26,15 +44,25 @@
   &__title {
     max-width: 378px;
     margin-bottom: 18px;
+    @include maxWidth(767px) {
+      text-align: center;
+    }
   }
   &__text {
     margin-bottom: 37px;
+    @include maxWidth(767px) {
+      margin-bottom: 65px;
+    }
   }
   &__list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 0 20px;
+    @include maxWidth(767px) {
+      flex-direction: column;
+      gap: 70px 0;
+    }
   }
   &__item {
     flex-grow: 1;
@@ -71,5 +99,8 @@
   }
   &__image {
     flex-shrink: 0;
+    @include maxWidth(767px) {
+      margin-bottom: 100px;
+    }
   }
 }
