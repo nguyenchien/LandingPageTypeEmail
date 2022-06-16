@@ -1,5 +1,6 @@
 .library {
   margin-bottom: 140px;
+  display: block;
   &__title {
     margin-bottom: 31px;
   }
@@ -63,6 +64,38 @@
         align-items: center;
         justify-content: center;
         gap: 0 23px;
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 83px;
+    &__text {
+      text-align: center;
+      max-width: none;
+    }
+    &__tab {
+      .tab__nav {
+        margin-bottom: 40px;
+        a {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: calc(20 / 15);
+          padding: 7px 17px;
+        }
+      }
+      .tab__content {
+        .content-list {
+          flex-direction: column;
+          gap: 30px 0;
+        }
+      }
+      .tab__link {
+        a {
+          display: flex;
+          padding: 20px;
+          font-size: 17px;
+          line-height: calc(22 / 17);
+        }
       }
     }
   }

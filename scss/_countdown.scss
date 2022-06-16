@@ -31,4 +31,17 @@
     line-height: calc(28 / 18);
     color: $gar4f;
   }
+  @media screen and (max-width: 1023.98px) {
+    padding: 40px 0;
+    margin-bottom: 70px;
+    &__title {
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: 15px;
+    }
+    &__list {
+      gap: 0 50px;
+    }
+  }
 }

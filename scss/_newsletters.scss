@@ -103,4 +103,19 @@
       margin-bottom: 100px;
     }
   }
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 100px;
+    &__header {
+      margin-bottom: 80px;
+    }
+    &__content {
+      width: 60%;
+    }
+    &__title {
+      max-width: none;
+    }
+    &__image {
+      width: 40%;
+    }
+  }
 }

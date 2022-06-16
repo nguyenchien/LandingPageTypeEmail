@@ -80,3 +80,41 @@ body {
     color: white;
   }
 }
+body.overlay {
+  overflow-y: hidden;
+  &::after {
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: black;
+    opacity: 0.7;
+  }
+}
+.for-sp {
+  display: none !important;
+}
+.for-pc {
+  display: flex !important;
+}
+@media screen and (max-width: 767.98px) {
+  .for-sp {
+    display: flex !important;
+  }
+  .for-pc {
+    display: none !important;
+  }
+}
+
+.header,
+.countdown,
+.newsletters,
+.thepoints,
+.services,
+.tools,
+.testmonials,
+.library,
+.footer {
+  display: none;
+}

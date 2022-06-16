@@ -53,4 +53,13 @@
       padding: 20px;
     }
   }
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 100px;
+    &__content {
+      width: 60%;
+    }
+    &__image {
+      width: 40%;
+    }
+  }
 }

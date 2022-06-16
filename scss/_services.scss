@@ -70,4 +70,10 @@
       color: $gar7f;
     }
   }
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 70px;
+    &__heading {
+      margin-bottom: 30px;
+    }
+  }
 }
