@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
 }
 .wrapper {
-  //   overflow: hidden;
+  overflow: hidden;
 }
 .container {
   max-width: calc(#{$container-width} + #{$gap} * 2);
