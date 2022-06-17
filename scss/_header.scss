@@ -88,6 +88,9 @@
           $primary-color,
           $primary-yellow
         );
+        @include maxWidth(767px) {
+          display: none;
+        }
       }
     }
   }

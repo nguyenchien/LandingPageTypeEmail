@@ -250,6 +250,9 @@ body.overlay {
         width: 0;
         height: 2px;
         background-image: linear-gradient(to left, #00bd82, #e2f471); }
+        @media (max-width: 767px) {
+          .header .menu__link::after {
+            display: none; } }
   .header__button {
     display: inline-block;
     font-weight: 400;
