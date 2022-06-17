@@ -52,4 +52,7 @@
   &__image {
     max-width: 400px;
   }
+  @media screen and (max-width: 1023.98px) {
+    margin-bottom: 70px;
+  }
 }

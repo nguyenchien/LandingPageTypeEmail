@@ -162,5 +162,9 @@
     &__message:after {
       display: none;
     }
+    &__heading {
+      max-width: none;
+      margin-bottom: 40px;
+    }
   }
 }

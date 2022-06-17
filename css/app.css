@@ -148,16 +148,13 @@ body.overlay {
   .for-pc {
     display: none !important; } }
 
-.header,
-.countdown,
-.newsletters,
-.thepoints,
-.services,
-.tools,
-.testmonials,
-.library,
-.footer {
-  display: none; }
+@media screen and (max-width: 1023.98px) {
+  .heading--big {
+    font-size: 40px;
+    line-height: calc(53 / 40); }
+  .heading--small {
+    font-size: 30px;
+    line-height: calc(40 / 30); } }
 
 .header {
   display: block;
@@ -540,7 +537,9 @@ body.overlay {
     .services {
       margin-bottom: 70px; }
       .services__heading {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px; }
+      .services__item {
+        padding: 20px 15px; } }
 
 .tools {
   display: block;
@@ -589,6 +588,9 @@ body.overlay {
         line-height: calc(22 / 17); } }
   .tools__image {
     max-width: 400px; }
+  @media screen and (max-width: 1023.98px) {
+    .tools {
+      margin-bottom: 70px; } }
 
 .testmonials {
   display: block;
@@ -714,7 +716,10 @@ body.overlay {
     .testmonials {
       margin-bottom: 70px; }
       .testmonials__message:after {
-        display: none; } }
+        display: none; }
+      .testmonials__heading {
+        max-width: none;
+        margin-bottom: 40px; } }
 
 .library {
   margin-bottom: 140px;
@@ -790,6 +795,9 @@ body.overlay {
         padding: 20px;
         font-size: 17px;
         line-height: calc(22 / 17); } }
+  @media screen and (max-width: 1023.98px) {
+    .library {
+      margin-bottom: 70px; } }
 
 .footer {
   display: block;
