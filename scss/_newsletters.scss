@@ -99,6 +99,9 @@
   }
   &__image {
     flex-shrink: 0;
+    &:after {
+      right: -146px;
+    }
     @include maxWidth(767px) {
       margin-bottom: 100px;
     }
@@ -116,6 +119,14 @@
     }
     &__image {
       width: 40%;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__content {
+      width: auto;
+    }
+    &__image {
+      width: auto;
     }
   }
 }

@@ -16,6 +16,9 @@
   }
   &__image {
     flex-shrink: 0;
+    &::after {
+      left: -146px;
+    }
   }
   &__content {
     max-width: 548px;
@@ -60,6 +63,14 @@
     }
     &__image {
       width: 40%;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__content {
+      width: auto;
+    }
+    &__image {
+      width: auto;
     }
   }
 }
